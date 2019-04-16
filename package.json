@@ -1,0 +1,32 @@
+{
+  "name": "abas",
+  "version": "1.0.0",
+  "description": "abase website",
+  "engines": {
+    "node": "10.0.0"
+  },
+  "scripts": {
+    "start": "node server",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esm": "^3.2.11",
+    "express": "^4.14.1",
+    "lodash": "^4.17.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:junenur/abas.git"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "license": "MIT",
+  "devDependencies": {}
+}
