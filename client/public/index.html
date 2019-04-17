@@ -36,16 +36,122 @@
 
   <style>
     /* you can put styles here too */
+    .header {
+      width: 100%;
+      height: 70px;
+      background: #242424;
+      border-bottom: 1px solid grey;
+      box-sizing: border-box;
+      color: white;
+    }
+    .content {
+      color: #424242;
+      padding: 0;
+    }
+    .scroller {
+      position: relative;
+      height: 300px;
+      max-width: 980px;
+      width: 100%;
+      overflow: hidden;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .scroller-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    a {
+      display: inline-block;
+    }
+    .temp-1 {
+      height: 100%;
+      background: grey;
+    }
+    .temp-2 {
+      height: 100%;
+      background: #f3f3f3;
+    }
+    .scroller-content {
+      padding: 24px;
+      background: white;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.14);
+      border-radius: 4px;
+      transform: translate(100%, 100%);
+      width: 300px;
+    }
+    footer {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      background: black;
+      color: white;
+      justify-content: center;
+      align-items: center;
+    }
   </style>
 
   <body>
     <div id="root" class="loader"></div>
 
-    <div class="container">
-      <header class="header">
-        <div class="logo"><img src="./assets/logo.png" /></div>
-      </header>
-      June this is where you can begin adding your html markup
+    <header class="header">
+      <div class="logo"><img src="./assets/logo.png" /></div>
+    </header>
+    <div class="scroller">
+      <ul class="scroller-container">
+        <li>
+          <img src="https://via.placeholder.com/900x300" alt="some image" />
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/900x300" alt="some image" />
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/900x300" alt="some image" />
+        </li>
+      </ul>
+      <div class="scroller-content">
+        This is content inside the scroller gallery
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 temp-1">
+            Column 4
+          </div>
+          <div class="col-md-8 temp-2">
+            Column 8
+          </div>
+        </div>
+      </div>
+      <footer>
+        <ul>
+          <li><a href="/some-link">Contact</a></li>
+          <li><a href="/some-link">About</a></li>
+          <li><a href="/some-link">Info</a></li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>

@@ -4,7 +4,7 @@ import shades from '@bupa-digital/shades/react';
 import 'features/site-ui/styles.css';
 
 const App = () => {
-  return <div>Hello June</div>;
+  return <div style={{ display: 'none' }} />;
 };
 
 const domNode = document.querySelector('#root');
